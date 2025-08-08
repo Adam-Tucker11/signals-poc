@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local env & secrets
+.env
+*.env
+.streamlit/secrets.toml
+
+# Mac cruft
+.DS_Store
+
+# Run artifacts
+runs/*
+!runs/.gitkeep
+
+# Optional: large raw data (keep only samples)
+data/real/*

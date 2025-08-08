@@ -1,0 +1,22 @@
+You are a product-intelligence analyst.
+
+Given:
+- Meeting title: {{ meeting_title }}
+- Meeting type: {{ meeting_type }}
+- Existing taxonomy (IDs): {{ taxonomy_ids|join(", ") }}
+
+Task:
+From the transcript below, propose NEW topics that are not already covered by the taxonomy.
+For each new topic return:
+- label: short human-readable name
+- topic_id: kebab-case slug (e.g., "email-spam-filtering")
+- evidence: one verbatim sentence or phrase from the transcript
+- why_new: brief reason it’s not in the current taxonomy
+
+Transcript:
+---
+{{ transcript_text }}
+---
+
+Return JSON that validates against the provided schema.
+

@@ -1,0 +1,8 @@
+[
+  {"id":"onboarding","score":0.85},
+  {"id":"dashboard","score":0.60},
+  {"id":"integrations","score":0.50},
+  {"id":"meeting-processing","score":0.50},
+  {"id":"topic-scoring","score":0.50},
+  {"id":"customer-interviews","score":0.40}
+]

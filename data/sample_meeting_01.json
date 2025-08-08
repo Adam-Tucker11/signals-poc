@@ -1,0 +1,12 @@
+{
+  "meeting_id": "abc12345-6789-0123-4567-89abcdef0123",
+  "meeting_type": "customer_call",
+  "meeting_title": "Onboarding pain points + dashboard",
+  "transcript": [
+    {"speaker":"PM","text":"Thanks for taking the time today. Could you walk me through your onboarding pain points?","start_time":"00:00:15"},
+    {"speaker":"Customer","text":"Sure — the invitation email went to spam and I couldn’t finish SSO.","start_time":"00:00:27"},
+    {"speaker":"PM","text":"Got it. Anything else?","start_time":"00:01:10"},
+    {"speaker":"Customer","text":"The dashboard categories were confusing; I expected to see ‘Analytics’ but saw ‘Insights’.","start_time":"00:01:18"}
+  ]
+}
+

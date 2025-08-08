@@ -1,0 +1,21 @@
+You are labeling transcript chunks with EXISTING taxonomy topics only.
+
+Existing topics (IDs): {{ taxonomy_ids|join(", ") }}
+
+For each chunk, if it clearly mentions one of those topics, return a mention with:
+- chunk_id
+- topic_id (must be exactly the taxonomy id)
+- topic_label (human-readable label; can equal the id)
+- evidence (verbatim phrase/sentence from the chunk)
+- relevance (number 0.0–1.0)
+
+Relevance guidance:
+- 0.15 = casual reference/name-drop
+- 0.50 = concrete problem/need
+- 0.90+ = decision/commitment/actionable plan
+
+Chunks (JSON):
+{{ chunks_json }}
+
+Return JSON that validates against the provided schema.
+

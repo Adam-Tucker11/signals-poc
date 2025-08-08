@@ -1,0 +1,620 @@
+{
+  "meeting_id": "7aa59687-e626-4908-81ce-2b9dcae85f01",
+  "meeting_title": "Weekly Design Sync",
+  "meeting_type": "general",
+  "starts_at": "2025-08-06T18:30:00Z",
+  "transcript": [
+    {
+      "speaker": "Luke",
+      "text": "Some guys. My internet's been really slow today, so\u00e2\u0080\u00a6 Do you see that? Just let me know. Adam, how you doing, man? What's that?"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Uh, you seem fine. I said, you seem fine so far, and then you said, what's that?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Pretty good."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Lag, is it?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I'm, uh, I'm doing good. They're not all over the place, but still been a productive day, so that's a win."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Nice. Yeah, um\u00e2\u0080\u00a6 Cool. Well\u00e2\u0080\u00a6 Yeah, a couple of\u00e2\u0080\u00a6 couple of things to look at today. Um\u00e2\u0080\u00a6 One thing, one that's kind of a bigger idea, a newer idea, maybe you could say. Be good to start with that one, probably. Um\u00e2\u0080\u00a6 It's kind of a build on what we talked about, I think it was\u00e2\u0080\u00a6 was it two weeks ago, or maybe it was last week, but\u00e2\u0080\u00a6 I had a\u00e2\u0080\u00a6 I had a comp for\u00e2\u0080\u00a6 Like, a live meetings. 2.0 type I\u00e2\u0080\u00a6 And I feel like, um\u00e2\u0080\u00a6 A couple of products that I've been using lately, and just a\u00e2\u0080\u00a6 just a sense, kind of from you, Adam, and I think somebody else mentioned it too, but, like. I feel like the idea of just ambient\u00e2\u0080\u00a6 like an ambient AI\u00e2\u0080\u00a6 makes a lot of sense for product forge in some ways, right? Because\u00e2\u0080\u00a6 You're doing a lot of chatting to build out stories."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "What's a story with everything, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Oh, okay, it was Kaiser. It was Kaiser, because, uh\u00e2\u0080\u00a6 Yeah, because I felt like for him, it's like, okay, he's solo, he's, like, building a product, it's like\u00e2\u0080\u00a6 And then we're, like, showing them, we're like, hey, here's, like. These meetings, and, like, you can have meetings, and then, like, with your team, and it's like, he doesn't have a team, he doesn't have\u00e2\u0080\u00a6 you know, meetings, really, or maybe he does, but they're, like, kind of different than ever thinking about. And I was like. One of the thought experiments was, like, how do we\u00e2\u0080\u00a6 how can we kind of, uh\u00e2\u0080\u00a6 push\u00e2\u0080\u00a6 push into a direction. Allows you to use the power of the meeting, but it doesn't necessarily have to be. Uh\u00e2\u0080\u00a6 the\u00e2\u0080\u00a6 like, with your team. I mean, obviously, it could be with your team, but it's more like. Um, you know, could it work as kind of a connected audio mode?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "It\u00e2\u0080\u00a6 is\u00e2\u0080\u00a6 is Luke leggy? Or is it? Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "In ambient mode, so\u00e2\u0080\u00a6 um\u00e2\u0080\u00a6 Alright, let me\u00e2\u0080\u00a6 Okay, so\u00e2\u0080\u00a6 Whoops\u00e2\u0080\u00a6 Yeah, I am\u00e2\u0080\u00a6 I'm probably\u00e2\u0080\u00a6 yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Lucas Legger, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Sorry, I'm gonna try my best. I might just mute my camera."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "You're fine, dude. It's\u00e2\u0080\u00a6 yeah, it's workable."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Your audio's fine."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, but I'll try. Okay. Yeah, okay, cool. Well, just tell me if it gets worse, but\u00e2\u0080\u00a6 Okay, so let me just orient you to this\u00e2\u0080\u00a6 to this\u00e2\u0080\u00a6 what's going on here. So this person, this PM. Is Alex Morgan. Alex is, like, looking at the daily, just came into product for us, like, yeah, cool, well, daily, awesome. Love it. Uh, and then Alex realizes we need to kick off a new project, I want to get that ready. And so, maybe the way that Alex does this, maybe\u00e2\u0080\u00a6 He goes to this little three dots in Smith, and goes, like, listening mode, okay? Listening mode, basically. Takes us to this new state. And the new state here is\u00e2\u0080\u00a6 let's connect to a meeting in the same way that. Uh, live meetings does today, but this is, like. You're almost thinking about it as just localized to Smith. Right? It's not\u00e2\u0080\u00a6 Of course, it can do everything that\u00e2\u0080\u00a6 It can\u00e2\u0080\u00a6 we can do today, but so, we're like, cool, let's set up\u00e2\u0080\u00a6 set up a\u00e2\u0080\u00a6 let's set up a\u00e2\u0080\u00a6 an audio stream. What\u00e2\u0080\u00a6 where do we want to go from? This is for a couple of reasons, too. Like, one, the web audio sucks. It's 5 minutes max, it's\u00e2\u0080\u00a6 the transcription's really not great. So we really\u00e2\u0080\u00a6 if we want to do this ambient mode, we want to do it with, like. A real\u00e2\u0080\u00a6 a real application that can do it. I mean, Slack might be one of the more interesting ones. Which we call this support, but yeah, one of these three, or something else, but another app. So we're like, yeah, let's connect. So we connect. And now we're connected to the Zoom. And the user gets this tip, hey, like, you can interact directly with Smith. You can, like, talk to Smith. Smith's also gonna listen, so we get this new state change where it's like, okay, Smith's listening to me. We see that the chat goes away, or at least it's hidden. So it starts to prompt me, like, okay, this isn't really about chatting anymore, it's about something different. And so the PM\u00e2\u0080\u00a6 so these little\u00e2\u0080\u00a6 these little cartoon boxes down here will symbolize the PM talking. Hey, we need a way to standardize the user stories, we want to create some new templates, you know, the PM just starts talking, essentially. Smith kind of, like, listens and responds, like, oh, wow, okay, sounds like a new project. Do you want to create an artifact templates project? Like, uh, yes, I can say\u00e2\u0080\u00a6 I can say, you know, I can edit the name, I can just\u00e2\u0080\u00a6 not do anything with that. Um, so let's say the user's like, yeah, okay, cool. So Smith just creates the project, just like it would if you had typed, hey Smith, create a project, right? But\u00e2\u0080\u00a6 I'm just using my voice. So the idea here is, like, hey, let's use voice and just quick commands. For a lot of things, can\u00e2\u0080\u00a6 what can we get out of that? So then, the user makes that\u00e2\u0080\u00a6 makes that project, Smith says, great, created the project. I can write a short description based on what you said. Do you want to review it, or do you want to just do it? He's just like, let's review it. So again, Smith uses the same tool called\u00e2\u0080\u00a6 it's a very similar UI and UX to when you use tool calls. Within the chat experience, except that. You don't necessarily have, like. A lot of back-and-forth messages. Smith is kind of just a one-way. In this\u00e2\u0080\u00a6 in this example. So\u00e2\u0080\u00a6 Let's say that Smith revises the description, and you're like, yeah, looks great. I mean, ad is probably not the right. We're there, but, like, yes or no, and you're like, yeah. So, we updated the project. Again, this\u00e2\u0080\u00a6 this pane is completely independent. I can navigate independently, do anything that I want to, just like normal Smith. That you can. So Smith can do all this stuff, and you're gonna get, like, receipts here. So, the project gets\u00e2\u0080\u00a6 oh yeah, this is important. So you're just like, cool, let's go see this project. Clicks on the project. Boom. Now we're in the project, artifact templates. Smith notices that the project. Now, notices that the context has shifted to this new project, like, hey. We got this\u00e2\u0080\u00a6 we got this project, we can start building out stories, do you want to talk about strategic goals, research? You get, like, a little actions tray. This would have a bunch of different quick actions. But the PM goes, let's start with the North Star. For this one. What do you suggest? And Smith's like, okay, cool, let's think a little bit. Yeah, great. A North Star goal is going to anchor the project. Let's tell me more\u00e2\u0080\u00a6 what else do you\u00e2\u0080\u00a6 what do you want in this North Star? Is it about customization? You know, it might\u00e2\u0080\u00a6 it might list out a bunch of things here, like\u00e2\u0080\u00a6 Ask questions. The PM, instead of saying yes or no here, the PM goes, it is about customization, but we want to measure it with data. It's just like, okay, cool. How about this idea? Percentage of new artifacts with templates. Maybe it could be 25% in the first 2 weeks. You know, Smith is responding. These are not doing a good job illustrating that, but Smith is responding. Like, yeah, that sounds good. Cool. Updates the project. Right? And then writes it into the summary. Update the summary with this North Star metric, like, cool, that looks great. Now let's\u00e2\u0080\u00a6 now that PM goes, let's work on some user stories. I want to scope things down. Right? Let's not get our engineer overwhelmed. We're gonna need a feature flag, and the PM could just be talking. I mean, this is just kind of generally talking. And this prototype doesn't do a great job, but, like. I would have had to make, like, basically 5 screens for every one, right? Because the first screen would just be the talking, and then Smith would be like\u00e2\u0080\u00a6 yes, great, I'll start making the\u00e2\u0080\u00a6 you know\u00e2\u0080\u00a6 There would be a lot of state movement here, and I just didn't want to\u00e2\u0080\u00a6 make, like, I already made, like, 30 screens, so making 90 would have been\u00e2\u0080\u00a6 Terrible, but\u00e2\u0080\u00a6 so basically\u00e2\u0080\u00a6 So imagine, like, these are, like, there's kind of some back and forth here, but the PM's like, yeah, great. So Smith starts working on the stories. We generate the stories, again, just like we would. In normal chat. And the mechanics are kind of the same. I think the differences were just piping the sections from the meeting transcript. Into some of the different, you know, there might be a centralized thing that's listening to that, and then that might be sending. Some messages over to Smith somehow, but basically, yeah, like. This mode, the real difference is that input is coming from. Transcripted text, not\u00e2\u0080\u00a6 typed text, right? And, um, but we still have, like, the message thread history. Like, you could open this history. So, like, one of the things that I realized was, like. Hey, it's not going to be this linear thing where it's like, assistant, user, assistant, user, the messages don't just flow that way, they're kind of more\u00e2\u0080\u00a6 Yeah, they're just kind of, like, they can be more\u00e2\u0080\u00a6 feel more one-off. So, sometimes things get hidden, as you'll notice throughout this, like, there's only, like, one or two bubbles from Smith at all times. You're not just seeing, like, a huge thread. You could open the whole history if you wanted to see, like. Everything that you had talked about in this, but it's more like\u00e2\u0080\u00a6 I don't want to see that, I want it to just feel more like Smith is listening. Smith responds whenever I need response. Smith might offer something proactively, but that's not very common. And then I have\u00e2\u0080\u00a6 I can also be like, Smith, generate a user story. Like, if I, you know, keyword into Smith, like. That's the way to kind of\u00e2\u0080\u00a6 That's my direct way, but\u00e2\u0080\u00a6 Okay, so we got these issues, the issue's like, cool, let's go check them out. Jumps over to the issues, uh, it's like, okay, let's look at this one, this template. They're like, yeah. So, we look at the template, and this one's like, uh, it's fine, but I've got some documentation to enrich this. So the user clicks Enable Chat. Right? And this is just really to show, like, you could enable the chat, you could paste in a bunch of text. This is like\u00e2\u0080\u00a6 In Cloud Code, they do this thing that I think is really nice, where. If I paste something into Cloud Code, it doesn't just show me, like, the giant. Thing. It just, like, concatenates it that way, and then, like, behind the scenes, they handle it."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Anyways, that's just a thing that was on my mind. That I wanted to put in here. But, so then the user's like. So this is a scenario where I was trying to sketch out the scenario where when is text actually better than talking? And, like, this might be an example, you're like. I've got some docs, or I've got a URL that I want to look at, or I've got, you know\u00e2\u0080\u00a6 you've got something that text makes a lot more sense than actually talking that out. So you could paste that in, hit go. It's like, cool, Smith's gonna, like, think about that, and like, great, I've read the document. I made some updates. It's gonna give you the description, you know, again, it's gonna give you the updates, kind of, in the other way, and you can do, like, update, and that would then update this, like\u00e2\u0080\u00a6 But again, yeah, it's kind of like\u00e2\u0080\u00a6 And I think this is, like, what I would say about this prototype is I think it covers about. 5% of the actual use cases of what you could do with voice and ambient mode. It's not a very good. It's not a very complete visual of what that could be like, but the whole\u00e2\u0080\u00a6 the three things that I want to. To display here, one. The\u00e2\u0080\u00a6 the state where Smith is listening is very similar to the state where you're chatting with Smith. The difference is just that you're not chatting. And, uh, it's reactive, right? That's two, you can move around the app, right? So let's pretend this was actually a refinement meeting. It wasn't\u00e2\u0080\u00a6 it's not a, um\u00e2\u0080\u00a6 You know, it's not just a solo\u00e2\u0080\u00a6 a solo deal. You could\u00e2\u0080\u00a6 instead of having to go to live meetings and be like, I gotta pre-make all these stories or all these things, you can just be like, let's go to this\u00e2\u0080\u00a6 let's go to this meeting I had yesterday. I want to\u00e2\u0080\u00a6 I want to share with\u00e2\u0080\u00a6 with you guys what happened in this meeting. Look at this. Okay, make a story. Hey, let's go over to\u00e2\u0080\u00a6 You know, let's look at some feedback that we got, right? Like, you're able to just kind of, like, use the app, and then\u00e2\u0080\u00a6 the conversation should sort of brew, and. Let Smith give you some stuff. I didn't\u00e2\u0080\u00a6 and I didn't put this in here, but this is another important point. I think you should be able to, like, ignore, or, like, it's not like everything that Smith is saying is\u00e2\u0080\u00a6 should be, like. Gospel to the conversation, you know? Like, there will be times where you're just talking with the team, and you're having a discussion, and someone's like, do you want me to research this thing? And you're like, no. No, we don't. You know, like, that's gonna happen, right? This is\u00e2\u0080\u00a6 for the solo mode, I do think it's a bit, uh, easier to figure out what's going on, because\u00e2\u0080\u00a6 there's not a whole discussion to capture between multiple parties, but\u00e2\u0080\u00a6 I think, like\u00e2\u0080\u00a6 The benefits here are just, like, the UX is obviously a bit\u00e2\u0080\u00a6 can be streamlined if it\u00e2\u0080\u00a6 if it works. And then, um, you know, the other thing is just, like, I think that\u00e2\u0080\u00a6 There are actually a lot of apps right now playing in the space of audio, like Super Whisperer and\u00e2\u0080\u00a6 monologue, and there's a bunch of other apps. And they're trying to, like, be the voice layer. To control these other experiences that are mainly\u00e2\u0080\u00a6 they're mainly keyboard-based. And I think that, like, we have the option to be, like. Hey, we're keyboard-based, but you can use one of these other apps to control us on top, like\u00e2\u0080\u00a6 Um, that's kind of what I've been playing around with this week. Or, we could build that mode in where. Because we already have the transcriptions, because we already have the live. Um, stuff, it's just a\u00e2\u0080\u00a6 Yeah, and again, we kind of tried with, uh\u00e2\u0080\u00a6 We tried with our last go-around to make this better, and it was still tricky. I'm not saying that I\u00e2\u0080\u00a6 that I've come up with all the answers, technically, on how to get through this, but\u00e2\u0080\u00a6 I do think that, like, maybe if we rethought about it, instead of just the generation endpoints. Imagine that it was actually. Um\u00e2\u0080\u00a6 It's actually just chat. It, like, literally is the Smith chat. But instead of sending user messages every time, we're, like, kind of hiding that from the UI, almost. But it's still getting sent. Right? It's still getting into the conversation, it's just sort of in a different way. And I think that will make all these tools work, and allow us to kind of use all the stuff we've built for chat. But just in kind of a different way. And then, uh\u00e2\u0080\u00a6 Yeah, I don't know. Might be\u00e2\u0080\u00a6 Might be a compelling way for somebody like Kaiser, somebody like\u00e2\u0080\u00a6 Adam, or somebody who, like\u00e2\u0080\u00a6 I think for, like, building out. You know, a large\u00e2\u0080\u00a6 a large\u00e2\u0080\u00a6 group of work without, like, having to type a ton of stuff. It really\u00e2\u0080\u00a6 It makes sense. Maybe you want to talk for, like, 5 minutes, and just have Smith just listen to that, right? And then go, like, okay, cool. Now let's respond and do stuff. Um\u00e2\u0080\u00a6 Yeah, so anyways, that's\u00e2\u0080\u00a6 that's sort of the whole\u00e2\u0080\u00a6 that's\u00e2\u0080\u00a6 that's one of the flows here. Um. I know that's a lot of coverage."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "So I didn't\u00e2\u0080\u00a6 I'm not, like, watching a movie because it just shared accidentally on my screen, and you guys just caught me watching a video. Do you see the screen that I'm sharing?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Uh, no."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I do. I see it."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "No? Oh, it's so sad. You were just in the middle of talking, and I randomly shared\u00e2\u0080\u00a6 Iron Man making of\u00e2\u0080\u00a6 making of\u00e2\u0080\u00a6 making a part."
+    },
+    {
+      "speaker": "Luke",
+      "text": "It, like, Zoom does not\u00e2\u0080\u00a6 Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Did it switch\u00e2\u0080\u00a6 it switched mine automatically."
+    },
+    {
+      "speaker": "Luke",
+      "text": "I didn't search mine, probably because I was sharing, so that makes sense."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah, that is, like, that's the mode that is aligned with that."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah. Yeah, I just did it a second ago, Luke, so we didn't\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Exactly."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Ethan is rich, like, I mean, I really think about it as, like, yes, meeting, I feel like that's already, like, been, like, oh, it's meeting\u00e2\u0080\u00a6 live meetings 2.0, and it's like, well, no. Sure, like, that could be\u00e2\u0080\u00a6 capability, but, like, it's really, like, how I\u00e2\u0080\u00a6 would imagine I'm building real-time."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, so, yeah, just to layer on, Luke, um, this lady I interviewed this morning, Anka Mihoki, um."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Okay. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "I didn't make that up. Um\u00e2\u0080\u00a6 I almost\u00e2\u0080\u00a6 I was gonna send it to you guys, it wasn't that big of a deal, but now I kind of wish I had. Basically, to, like, watch the last 5 minutes or something, but basically. She was like, yeah, and then earlier in the meeting, she was like, I use ChatGPT to write my user stories, and blah blah blah. And we came towards the end of the meeting, and this was gonna be\u00e2\u0080\u00a6 like, I don't know, I just wanted to\u00e2\u0080\u00a6 I felt like pressing it a little bit, so I was like, listen, if you're writing stories in\u00e2\u0080\u00a6 ChatGPT, why in the world would you use ProductForge? Like, because she was a product owner. She wasn't a product manager, she's a product owner at a consulting company. Her job is to write stories. Like, that's her value prop inside ProductFork, you know? And it turns out that was not our value prop inside product form. She was like, yeah, but you've got, like, everything blended together, and it's just so seamless transitioning between. The tools and the capabilities and sort of that, like, that, like, flow work to her was really, like, a compelling enough reason to say that she would switch to ProductForge. Um, and so you breaking down, or us breaking down more barriers in terms of experience and all that is, like."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Like, why the performance stuff matters so much."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah. Yeah, so it's\u00e2\u0080\u00a6 it's definitely\u00e2\u0080\u00a6 the right direction. You know, we can talk about timing, that's not pushback, it's just, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Honestly, if I\u00e2\u0080\u00a6 my primary question is, like, what's the most rudimentary version you can stand up this afternoon? Like, that's, like, my primary question. But, like, I don't wanna\u00e2\u0080\u00a6 I'm always respectful of Adam and the\u00e2\u0080\u00a6 and, like, roadmap stuff. Uh, at least\u00e2\u0080\u00a6 Well, even privately, I'm respectful of it, I just, like\u00e2\u0080\u00a6 I'm always telling Adam I want more stuff. He just never gives a\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I put it\u00e2\u0080\u00a6 I always put it on the backlog. Immediately."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "So, Luke\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, yeah, I mean\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "You put it on the backlog immediately, is that what you said? Yeah, thanks. Um\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "In my backlog has never, ever lived anywhere other than my brain, so\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah. So, Luke, it's spot on, man, and I love\u00e2\u0080\u00a6 that you found a way. To simplify the, um\u00e2\u0080\u00a6 the voice mode. Like, the other simplification\u00e2\u0080\u00a6 the only other simplification idea that I've had is one that I've seen you do, so it probably came from you, but it's like, hey, Smith. Xyz, like, right? Um, and this is like that. It's like, it's a half a step simpler, like, you're just in that mode, everything that you say is a command. Maybe when you pause, that's when we, like, section off and go, like, cool, you must be done. You know, something like that."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, yeah, it. It's been interesting. Today, I've been actually using this, like, uh\u00e2\u0080\u00a6 this other\u00e2\u0080\u00a6 this transcription app, basically, that sits above cursor, and instead of typing anything that I would type in cursor, I've just been talking to it. And it's kind of like, there's a little\u00e2\u0080\u00a6 there's things I really like about it, there's things that are, like, weird about it that I don't like, but\u00e2\u0080\u00a6 I think that's the hard part. The hard part here is, like. How do we actually. Uh, like, these apps work, right, because I say\u00e2\u0080\u00a6 I press record, I talk, talk, talk, talk, it transcribes it and sends it, and it just works. This is a little different because it's, like, everything is going\u00e2\u0080\u00a6 we're not, like\u00e2\u0080\u00a6 it's not, like, totally command-driven, like, hey, Smith, just do X. Smith, do Y, like\u00e2\u0080\u00a6 It still should be able to have the conversation, and maybe that's\u00e2\u0080\u00a6 Maybe that's where, like, the post\u00e2\u0080\u00a6 post-meeting, or, like, when you disconnect the meeting, you get, like, the post stuff. I don't know, like\u00e2\u0080\u00a6 But yeah, there's a lot of questions to solve, but at least, I think one. Thing that might be able to be true is just, hopefully we can get all the stuff that Smith can do in chat mode. We\u00e2\u0080\u00a6 if we can do that when we're connected to a meeting. That would be, like, a very\u00e2\u0080\u00a6 you know, that's kind of a proof of concept in terms of. And maybe it's voice command, right? Maybe that is the way that\u00e2\u0080\u00a6 Uh, we start, but\u00e2\u0080\u00a6 Yeah, it's\u00e2\u0080\u00a6 I think\u00e2\u0080\u00a6 I think there's gonna be some major breakthroughs in this area, especially with stuff, like, with chat and\u00e2\u0080\u00a6 other products. They've done well, but\u00e2\u0080\u00a6 I think there's gonna be more to that, so\u00e2\u0080\u00a6 Anyways\u00e2\u0080\u00a6 yeah, as far as the proof of concept, I don't know. It's\u00e2\u0080\u00a6 it's kind of\u00e2\u0080\u00a6 I think\u00e2\u0080\u00a6 I think we need to talk more about it and just figure out, like, how\u00e2\u0080\u00a6 what\u00e2\u0080\u00a6 how can we really narrow it down even more? Like. What is it\u00e2\u0080\u00a6 how can we simplify it, you know?"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, like, how hard\u00e2\u0080\u00a6 we're already\u00e2\u0080\u00a6 uh\u00e2\u0080\u00a6 we're already pulling in transcript real-time, right?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, like, the sections, like, the sections are, like, I don't know if they're\u00e2\u0080\u00a6 They're merely real-time. They're nearly up\u00e2\u0080\u00a6 Or chunks. Is it chunks?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "It's sections is\u00e2\u0080\u00a6 it's not sections. That's, uh\u00e2\u0080\u00a6 Yeah, yeah. It's chunks, but we can look at how we're doing that. Well, we pull in the streaming from recall, and we create chunks."
+    },
+    {
+      "speaker": "Luke",
+      "text": "What do we\u00e2\u0080\u00a6 what do we call it? There's something. Sessions have\u00e2\u0080\u00a6 Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "So that's the first thing, and then sections is what we use in the live meeting. They're like. Create the story generations. So chunks would be what it is, but, um\u00e2\u0080\u00a6 Look at how we're doing that. We're doing that sentence, like, we're doing that pretty small. Um, and so that's probably good, you know, that's a really good thing. I think it, like, could work. As is."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah, it's like, maybe, um\u00e2\u0080\u00a6 I mean, maybe you still would have that kind of, like, click\u00e2\u0080\u00a6 like\u00e2\u0080\u00a6 like, that kind of record\u00e2\u0080\u00a6 yeah, I don't know, like\u00e2\u0080\u00a6 The other thing I was thinking about is, like, a way to, like, kind of go, like, private, like. Maybe you're\u00e2\u0080\u00a6 I feel like there is something about, like, Smith listening or not listening that you need to be able to control, like\u00e2\u0080\u00a6 Uh, there's a lot of times when our conversation goes towards another way, and it, like, gets weird. Not\u00e2\u0080\u00a6 it gets weird from the sense that, like, it might influence how this. Bots thinking about stuff. So you might be able to be like, hey, just, like, stop listening for, like. Or\u00e2\u0080\u00a6 I don't even know what you'd say, like, maybe make a news story, but\u00e2\u0080\u00a6 Yeah, there's, like\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Oh, you just say, like, just like, hey, can you, like, ignore the last\u00e2\u0080\u00a6 bit\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah\u00e2\u0080\u00a6 yeah. Yeah. Yeah, it's almost like, uh\u00e2\u0080\u00a6 Maybe we'd stream, maybe we would stream the meeting\u00e2\u0080\u00a6 Because, like, you're right, Adam, it's like, there's\u00e2\u0080\u00a6 there's the session, and then there's, like, the transcript, and then there's the sections, or the\u00e2\u0080\u00a6 there's, like, three things, right? But, like\u00e2\u0080\u00a6 I think the smaller things are interesting to react to. Like, the voice commands, right? You'd want that to be, like, pretty fast. If you said, hey Smith, let's navigate to this project page, right? Let's go. You know, or hey, Smith, like, let's update this AC to include XYZ. Like, those type of things are kind of where you want the short stuff, and then\u00e2\u0080\u00a6 when it's looking\u00e2\u0080\u00a6 it might look at the sections, and that might be where it comes with a response\u00e2\u0080\u00a6 with a reaction. To, you know, oh, it sounds like you're talking about a new project, like. It wouldn't know that just from\u00e2\u0080\u00a6 one chunk, maybe. It might\u00e2\u0080\u00a6 it might have to listen to about. 30 seconds of a conversation to kind of be able to get that."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "If it's like a command mode, then it could be just\u00e2\u0080\u00a6 and if it's a solo command mode, then it can be based on periods of silence."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yes, yes, the\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "That's true. Yeah, I think we would, like, I don't think the logic for that is that hard, since we're not trying to do this, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Right."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Real-time voice back to you. Um, and we wouldn't use sections\u00e2\u0080\u00a6 Most likely, because right now, the only thing that creates a section is, like, when I hit generate in the live meeting. And so that's very manual. It would be conceptually similar, but, like, it would probably be time\u00e2\u0080\u00a6 based, um, or some combo of time and trigger. We'd probably build that function as a new\u00e2\u0080\u00a6 as a unique to this mode."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, I almost even wonder if, like, what if we just streamed the text as a user message? Into the chat, right? Like, directly from recall. Recall's getting it, right? And then as we're doing that. We're just, like, messaging, but we're not showing that. Like, the UI doesn't show those messages. And then Smith, like, would wait for a command to respond. So you'd have all the\u00e2\u0080\u00a6 the conversation would be there. But you just wouldn't see it. And then, like, if you said, make a story, Smith would kind of just magically know\u00e2\u0080\u00a6 it would kind of seem like, whoa, okay, it's listening, but we're really\u00e2\u0080\u00a6 It's, again, it's really just chat, but we're sort of like."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Kind of a\u00e2\u0080\u00a6 making it feel more not like chat, but it\u00e2\u0080\u00a6 it really is chat, if that makes sense."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I can\u00e2\u0080\u00a6 you can be in recall. Watching this\u00e2\u0080\u00a6 watching it happen."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, so it's not that hard for us to get it to our UI."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah. I've done it\u00e2\u0080\u00a6 I did it with that test stuff. I used recall."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Okay, well then, maybe\u00e2\u0080\u00a6 maybe the thing I'm asking for is not that valuable. I was like, if I could see it, maybe that would give me a better sense for, like. What it would feel like to interact with it, and that could be a cheaper way, even cheaper, to, like, learn something, but it sounds like we need to\u00e2\u0080\u00a6 pay the LLM in some way."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah, no, I see what you're saying, Rich. It's, like, almost like dictate mode, but, like, use the meeting instead of the browser."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, yeah, we're just kind of, like. It's just for us to learn, you know?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "For that. I like that. I think that could be worthwhile. I mean, that is a big thing that we have to learn is, like. How often should we, like, submit the messages? Like. What, you know, like\u00e2\u0080\u00a6 it's\u00e2\u0080\u00a6 again, I almost think about it, again, as, like. There's, like, a chat thing running in the background, you don't see that. That's where we're getting all of our\u00e2\u0080\u00a6 Responses, reactions, all that stuff. And then some of those get surfaced from the Smith side. To, like, do things. Um\u00e2\u0080\u00a6 But\u00e2\u0080\u00a6 yeah, I don't know, I want to research a little bit more. I think there are some products that are doing this a little bit\u00e2\u0080\u00a6 a little bit\u00e2\u0080\u00a6 interestingly, as well, and see what they're doing, but yeah, I mean. This is just, like, my idea of\u00e2\u0080\u00a6 Smith seems like it's working really well in chat. How could we, like, adapt that for a really nice, you know, ambient mode that's. Kind of takes away some of the\u00e2\u0080\u00a6 clutter of, like, the chat experience, the back and forth. Um, but\u00e2\u0080\u00a6 Yeah, it's\u00e2\u0080\u00a6 it's all\u00e2\u0080\u00a6 it's kind of experimental. I don't\u00e2\u0080\u00a6 I haven't seen something exactly like this. Like, I've definitely seen, like. Dictate where I tell it something, it transcribes me into\u00e2\u0080\u00a6 text, and then it sends that message, like, that's\u00e2\u0080\u00a6 That's a\u00e2\u0080\u00a6 that's something that we have, and we can do better on, but\u00e2\u0080\u00a6 Um, yeah, so. It's a bit of a technical\u00e2\u0080\u00a6 it might be a bit of a technical challenge, to be honest, but\u00e2\u0080\u00a6 Um, yeah. I don't know. I also feel like I don't think users are really, like. There's some people who are on the edge that would be like, yes, I really want this, but I think most of the people that we're talking to, Rich, like, I don't know, like."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Not the\u00e2\u0080\u00a6 Yeah. Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "I'm not sure that it's quite, like, a\u00e2\u0080\u00a6 It's not a slam dunk for them. Yeah, it's not like\u00e2\u0080\u00a6 They're like, oh, well, I wasn't gonna buy ProductForge, but now that you have ambient mode, I'm definitely\u00e2\u0080\u00a6 it's more like, uh\u00e2\u0080\u00a6 Just shows them that we're sort of, like, R&Ding. The future, but\u00e2\u0080\u00a6 Yeah, so, anyways. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, I think that there is, um\u00e2\u0080\u00a6 I think you're right about that. It's not, like\u00e2\u0080\u00a6 gonna change somebody's purchase choice, I don't think."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "But it sure illustrates the power of where we're going, which is part of the narrative that we're selling, but\u00e2\u0080\u00a6 Um, but also\u00e2\u0080\u00a6 they're not like, man, I just wish I had a better way to interact. They\u00e2\u0080\u00a6 those aren't the questions. But it's also\u00e2\u0080\u00a6 this is one of those things that, like. Uh, you know, they're gonna want a faster horse, like, but they might not want a faster horse."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I don't know what\u00e2\u0080\u00a6 they're not gonna ask for this, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Right, right."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, yeah. Um\u00e2\u0080\u00a6 And so, you know, it's a little bit of, like, researchy area, like, wow, we're continuing to meet other needs that they're expressing. Um, so that's why I'm like, what's the cheapest way that we could get it in front of just the team itself?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Um, and\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Luke",
+      "text": "I'm trying to think about it a little bit more, but yeah. Um, anyways, well\u00e2\u0080\u00a6 Uh\u00e2\u0080\u00a6 cool. I think that's, like, the best\u00e2\u0080\u00a6 that's kind of the best thing to look at from, like, a high-level perspective, but\u00e2\u0080\u00a6 Um\u00e2\u0080\u00a6 I\u00e2\u0080\u00a6 did clean up the, uh, did clean up the artifact page a little bit. We made some kind of small wins, small UX wins on\u00e2\u0080\u00a6 Little stuff, so, like, one thing is, like, this is the current\u00e2\u0080\u00a6 The current page layout looks like this. Right. Not a lot of, uh\u00e2\u0080\u00a6 low\u00e2\u0080\u00a6 low kind of, uh\u00e2\u0080\u00a6 hierarchy here, like, a lot of stuff kind of in different places, so tough to see what I should do, so we kind of\u00e2\u0080\u00a6 consolidated that down to, like, tags live over here. Uh, artifact type, project, and\u00e2\u0080\u00a6 your\u00e2\u0080\u00a6 Uh, what would you call this, Adam? Your integration link? Your integration\u00e2\u0080\u00a6 external link to the integration lives there."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Externally."
+    },
+    {
+      "speaker": "Luke",
+      "text": "So, it just cleans it up a little bit. I added this\u00e2\u0080\u00a6 I added the color in the background to kind of separate stuff out, but\u00e2\u0080\u00a6 I think it's looking cleaner and nicer. Um, this will go live tomorrow, so this will be actually released, but\u00e2\u0080\u00a6 It's\u00e2\u0080\u00a6 I just, you know, there's, like, a lot of\u00e2\u0080\u00a6 I would say, like, at the point that we're at right now in the app. There's probably, like, 8 or 9 things kind of in this same level, where it's like. Man, it's like, yes, does it work? Absolutely. Does it function? Yes. Does it look? Kind of polished? No, not really. And this\u00e2\u0080\u00a6 I think just\u00e2\u0080\u00a6 if we can do maybe, like\u00e2\u0080\u00a6 and so the stuff that I've been working on with projects."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "With this. These are kind of like the back burner type, you know, they're not the cool, like, oh, wow, new, new functionality, but I just think making a lot of these little changes like this."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah. I mean, you add that, plus, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "It's like UX debt, you know, that we're paying down. And I think it'll\u00e2\u0080\u00a6 it'll make a difference, so\u00e2\u0080\u00a6 Yes. Absolutely."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I'm really feeling\u00e2\u0080\u00a6 I mean, I'm really curious to see how Tony's stuff feels performance-wise, but, like, it does matter a lot. I mean, you look at these tools that we've talked about that, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Oh, man."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Functionality-wise, like, they're fine. Like, what they do is fine, but they\u00e2\u0080\u00a6 they are impressed, they feel really\u00e2\u0080\u00a6 I can press it, you know?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Like, linear\u00e2\u0080\u00a6 like, linear\u00e2\u0080\u00a6 so I was researching a lot about how they're doing some of the stuff, and I think, like. It does go back to first principles, like paradigms that they\u00e2\u0080\u00a6 so one thing is, like, they\u00e2\u0080\u00a6 They optimistically change state on everything. So, like. You know, you change a project, and, like, they just do it, and then they make the API call. In the background, we're the opposite. We'll be like, oh, change projects? Let's hit the API, wait for the response. Okay, cool, it was great, now we'll change, you know. So, I think just stuff like that, and like\u00e2\u0080\u00a6 You know\u00e2\u0080\u00a6 as much as we can. Being a little bit more, um\u00e2\u0080\u00a6 you know, not having, like\u00e2\u0080\u00a6 like, another thing is just, like, having more skill\u00e2\u0080\u00a6 stuff like\u00e2\u0080\u00a6 you know, skeleton loader, where you're like. You're gonna see a page with a bunch of things that look like this. For about 2 seconds. You know, instead of seeing a giant loading indicator on every\u00e2\u0080\u00a6 I feel like that's\u00e2\u0080\u00a6 Part of what's bugging me now about the app is, like, every, you know, every link that I hit in here."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "For, like, 7 seconds, feels like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Every single thing. I go home, it's, like, loading. I go to meetings at Q, loading. Projects, loading. Issues, loading. Story, loading. Like\u00e2\u0080\u00a6 We load\u00e2\u0080\u00a6 Yeah, we load more than any other app, like, at all times, so it's just\u00e2\u0080\u00a6 I think\u00e2\u0080\u00a6 And that's not necessarily that other apps are not loading. They are, but they're taking a more, um\u00e2\u0080\u00a6 you know, the approach is a little bit more alike. Let's serve it to you, and then we'll make it right on the back end if it doesn't work, we'll kind of revert it, but\u00e2\u0080\u00a6 Um, yeah, just, I think there's a lot\u00e2\u0080\u00a6 I think there's some other things we can look at, because, I mean, honestly, linear is our\u00e2\u0080\u00a6 linear is our same stack. We can't even really go, like, hey, it's\u00e2\u0080\u00a6 well, it's not\u00e2\u0080\u00a6 It's not like\u00e2\u0080\u00a6 it's Next.js, it's Postgres."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "It's, um\u00e2\u0080\u00a6 Man, that's tailwind. It's, uh\u00e2\u0080\u00a6 you know, you could pretty much hit, like, if you looked across it, I think you'd be like, yeah, we're about. 85% the same, you know, on the front end, maybe 90%, and so\u00e2\u0080\u00a6 Whatever they're doing, we can try to do. And even just in small places, like. I think one thing that Linear is incredible on is, like, when you go to the Kanban, and you open a story. It's just like immediate\u00e2\u0080\u00a6 you almost\u00e2\u0080\u00a6 it's almost too fast. You're just like, whoa, oh, we're in, like\u00e2\u0080\u00a6 Nothing loads. Nothing. You do not\u00e2\u0080\u00a6 you do not feel it at all. You're just like, how did I get here? You don't even remember that you were on the other page. It feels like a modal opening, almost, but it's a page. You know, like, that's a\u00e2\u0080\u00a6 that's, I think, like, the gold standard in terms of, like."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "It doesn't have to be everywhere, but I do feel like when you're on\u00e2\u0080\u00a6 maybe when you're in the issues thing, and you go from an issue to a detail page. If we can just focus on that being a North Star, being like. There's no perceivable time that goes between an issue, you know, from a list view to a detail page. You know, I could deal with the other stuff, like, oh, if you go to homepage, maybe you gotta look\u00e2\u0080\u00a6 what, like\u00e2\u0080\u00a6 There's some other stuff that is\u00e2\u0080\u00a6 It's annoying, but I would rather trade it off, but, like. I want my navigation between. Uh, like, stories and artifacts and meetings and stuff to just be like, yeah, it's\u00e2\u0080\u00a6 It's\u00e2\u0080\u00a6 you don't even feel it. And I think that will\u00e2\u0080\u00a6 That'll make a big difference. Um\u00e2\u0080\u00a6 Yeah. And I think we can get there. It might be a little bit of work, but\u00e2\u0080\u00a6 It'll make\u00e2\u0080\u00a6 it'll make the app feel\u00e2\u0080\u00a6 A lot. Just a lot better."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Cool. What else? Anything?"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Trying to think about some other stuff. Been playing around with integrations, Adam. I'm trying to, like, I'm trying to get the\u00e2\u0080\u00a6 that integration chip a little bit, like. I'm gonna put it in line with the header, but\u00e2\u0080\u00a6 Yeah, um\u00e2\u0080\u00a6 No, I don't think so. Anything\u00e2\u0080\u00a6 so, Adam, you're out next week?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah, I mean, all next week\u00e2\u0080\u00a6 Should we talk about\u00e2\u0080\u00a6 From a design standpoint."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah, maybe we can\u00e2\u0080\u00a6 Yeah, just give me, like, a\u00e2\u0080\u00a6 give me kind of a hit list on some things that\u00e2\u0080\u00a6 that you're thinking about. Go ahead. Okay."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah. Cool. We can\u00e2\u0080\u00a6 we should probably connect tomorrow. I've got\u00e2\u0080\u00a6 which is out, I've got no\u00e2\u0080\u00a6 no meetings all day, so\u00e2\u0080\u00a6 That'd be good for us to kind of work through what makes the most sense to kind of start working on."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Okay, cool. Yeah, no, that's good. Um\u00e2\u0080\u00a6 Sweet."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, we did\u00e2\u0080\u00a6 the stuff we talked about yesterday, Luke, is, like, pretty straightforward from an implementation standpoint."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah, there's not really much design yet."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Okay. Okay."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Experience stuff, yeah, yeah, um\u00e2\u0080\u00a6 It's more like\u00e2\u0080\u00a6 it's all in a kind of back-end work."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Sold, just tables."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "All good. Alright. Well, yeah, I might try to\u00e2\u0080\u00a6 I might try to take an hour or two and just try to see what we can knock out in terms of, like, a demoable. Thing for that listening mode. I, you know\u00e2\u0080\u00a6 Obviously, not to go too deep into it, but\u00e2\u0080\u00a6 Just to see, like, is there something there that's worth\u00e2\u0080\u00a6 pursuing, or\u00e2\u0080\u00a6 Is it just a\u00e2\u0080\u00a6 shiny thing that's not worth it."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Yeah, I mean, we're just seeing, because, like, I even\u00e2\u0080\u00a6 I do even think, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Right now. But, yeah, I think\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "That, like, it\u00e2\u0080\u00a6 If it's not live streaming all the time, even just being able to, like. Work around the app, and, like, interact with Smith while I'm in\u00e2\u0080\u00a6 while I'm in a meeting. Like, it having the streaming, like, and me being able to be, like."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yes."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Hey, Smith, can you do this? Even if I'm typing it, or if there's just quick actions, like\u00e2\u0080\u00a6 generate story or whatever, so I think there's some of that that, like. If we need to, like, go lower fidelity on, we can, but I think trying to see what we can do. Uh, as we're experimenting, for sure."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Yeah. Cool. Okay. Um."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Can you, um\u00e2\u0080\u00a6 Can you throw a listen button on here instead of\u00e2\u0080\u00a6 it doesn't have to do anything. Just, I want people\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, yeah, yeah, yeah, yes. Yeah, um, the listen button, and then what about the one that generates the whole day, the day\u00e2\u0080\u00a6 the day update?"
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "So instead of having it add the task, it would be, like, at the top. You could, like\u00e2\u0080\u00a6"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Oh."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Right? The\u00e2\u0080\u00a6 the comms for the\u00e2\u0080\u00a6 wasn't that another thing? Like\u00e2\u0080\u00a6 It was, like, the\u00e2\u0080\u00a6 you know, in the same way that the task can do it for\u00e2\u0080\u00a6 Yeah, like, it could be both. It could be both, right? Maybe you're like, oh, this\u00e2\u0080\u00a6 I want to give this\u00e2\u0080\u00a6 this detail to my boss, but also, like, what about the whole, kind of, like, summarize my whole day as an email to my boss with. 5 bullets or whatever, and\u00e2\u0080\u00a6 something\u00e2\u0080\u00a6 something along those lines."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, nobody's hurting. Nobody's, like, asking about that. So, like, this illustrates that point, although summary email is, like. It's like this weirdest\u00e2\u0080\u00a6 weird thing. We're building this, like, advanced AI application, but we're sending emails still, you know? It should really be, like, Slack messages or something."
+    },
+    {
+      "speaker": "Luke",
+      "text": "But, you know, message."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "And, of course, we write them super formal, right? It's\u00e2\u0080\u00a6 it's gonna be, like, sincerely, and with much love and anticipation of your future response."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Right. Best regards. Rich. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Great. Uh, best for good, yeah. Um, it's just like\u00e2\u0080\u00a6 it's, like, super formal feeling. Um\u00e2\u0080\u00a6 the\u00e2\u0080\u00a6 like, in an ideal world, it's probably a Slack message instead of an email, but nobody's\u00e2\u0080\u00a6 nobody's griping about, including me, not griping about anything like that. They, like, get conceptually what it does. Um, and hopefully they'll complain for what they really want. Like, that's\u00e2\u0080\u00a6 that's, like, ultimately what we want."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "But, uh, we don't want them to complain, you know. I would say, like, if we're making tweaks, if we change that to a Slack message, that would be terrific. If we had one that was automatically there, that would be terrific. Uh, if we, um\u00e2\u0080\u00a6 I kind of want the, um\u00e2\u0080\u00a6 like, this day to just be auto-generated, but at the same time\u00e2\u0080\u00a6 oh, you know what would be really great? This is functional, though. Like, much more functional than everything I've been describing, is if it remembered\u00e2\u0080\u00a6 Anything that I generated here. So if I, like, go to the 25th."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, persisted the\u00e2\u0080\u00a6 yeah. Yeah."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "And say, generate\u00e2\u0080\u00a6 It forgets it, but\u00e2\u0080\u00a6 yeah, but, like, don't go writing a bunch of code, it's fine now that it does that."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, I was gonna talk to David about making, like, a digest table that we could just, like."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "So, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Put them in, but yeah, I mean\u00e2\u0080\u00a6 Trying to think\u00e2\u0080\u00a6 we could probably\u00e2\u0080\u00a6 Could do some other\u00e2\u0080\u00a6 Yeah, we could\u00e2\u0080\u00a6 we could figure out some workarounds, but I mean, ultimately, like, if this is a feature that we want to pursue. We're gonna want to persist them, obviously, and they should be automatically generated, you know, they should just happen, right? But, yes, I can do all those things, Rich. Email-to-message, play as podcast."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah, yeah."
+    },
+    {
+      "speaker": "Luke",
+      "text": "And the third thing you said was, oh, the half\u00e2\u0080\u00a6 what if it was just\u00e2\u0080\u00a6 what if, um\u00e2\u0080\u00a6 What if it was a card in there that was already the summary message? Should that\u00e2\u0080\u00a6 is that what you're\u00e2\u0080\u00a6 you're saying? Like, maybe at the bottom, it'd be like, summary message, copy, you know, it would just\u00e2\u0080\u00a6 it would be generated in the first."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Oh. Yeah. That's fine. That's fine."
+    },
+    {
+      "speaker": "Luke",
+      "text": "In the first generation. Okay."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Yeah. I don't think it has to be, like, the perfect experience just yet. Um, so if you want to throw it in there as a cart, that's fine."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Okay, cool."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Sweet. I mean, we're making good progress. Um, people\u00e2\u0080\u00a6 I told\u00e2\u0080\u00a6 I told Adam yesterday, Luke, uh\u00e2\u0080\u00a6 like, the responses I'm getting are pretty incredible, like, um, I'm getting positive responses from users, like, very positive responses from users, and probably every conversation. I mean, the kind of stuff you see from Kaiser. Um, I invited you to some random meeting on Friday, Luke, just because you're never in those meetings. Adam's in, like, maybe one a day."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Is this the Elon\u00e2\u0080\u00a6 is this Elon one?"
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Um, less than that, really. So\u00e2\u0080\u00a6 yeah, Elon, you know, so, um, you know how that dude's fired up by product management."
+    },
+    {
+      "speaker": "Luke",
+      "text": "How's not feeling? Okay."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "I don't think he cares. Elon's, like, an engineer-first kind of guy. Um, and so, uh\u00e2\u0080\u00a6 you know, it's just, like, a chance to hear people through\u00e2\u0080\u00a6 watch, it'll be a terrible one or something, but I don't have bad ones anymore. Like, I have confidence when I walk into them."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Sweet, okay."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Um, so, uh\u00e2\u0080\u00a6 Yeah. So, lots of positive stuff happening there, uh\u00e2\u0080\u00a6 We'll\u00e2\u0080\u00a6 we'll get better at converting them into LOIs. We're getting better already than the stuff we're doing is helping, so\u00e2\u0080\u00a6 Um, yeah. I agree."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah. Sweet. Well, yeah\u00e2\u0080\u00a6 Yeah, okay, awesome. Well, yeah, I'll make those changes, Rich, I'll let you know when they're\u00e2\u0080\u00a6 when they're updated."
+    },
+    {
+      "speaker": "Rich Theil",
+      "text": "Sweet. Thanks, man."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yeah, thank you guys."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "Well, I'm gonna be, uh, testing stuff in Staging, and if there's anything around the project, artifact detail pages, I'll just ping ya."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Yes, yes, thank you. I think we're gonna try to merge that soon, but yeah, let's test it out. Good deal. Yeah."
+    },
+    {
+      "speaker": "Adam Tucker",
+      "text": "I have some thoughts on the page, but I'll just\u00e2\u0080\u00a6 I'll just slack you, or uh\u00e2\u0080\u00a6 Nope, since your internet's EML. Wonky."
+    },
+    {
+      "speaker": "Luke",
+      "text": "Nice. Okay. All right, guys. Cheers."
+    }
+  ]
+}
