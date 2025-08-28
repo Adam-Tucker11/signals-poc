@@ -1,0 +1,11 @@
+{
+  "mentions": [
+    {
+      "chunk_id": "00000002",
+      "topic_id": "feedback",
+      "topic_label": "feedback",
+      "evidence": "the user feedback we got from last month's customer interviews.",
+      "relevance": 0.5
+    }
+  ]
+}

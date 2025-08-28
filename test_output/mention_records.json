@@ -1,0 +1,23 @@
+{
+  "mention_records": [
+    {
+      "meeting_id": "test-session-123",
+      "chunk_hash": "c50d7a3c270a3aeffecced6d476aef3db3563bea6c10ccab43c0dbd4fae750eb",
+      "topic_id": "product",
+      "speaker_role": "Rich Theil",
+      "meeting_type": "test",
+      "relevance": 0.9,
+      "timestamp": "2025-08-28T17:33:36.122338+00:00"
+    },
+    {
+      "meeting_id": "test-session-123",
+      "chunk_hash": "3bb906665924d0100c669f83d3fc3c84d9e504578f995caa24f06d8808328c10",
+      "topic_id": "feedback",
+      "speaker_role": "Adam Tucker",
+      "meeting_type": "test",
+      "relevance": 0.5,
+      "timestamp": "2025-08-28T17:33:36.122338+00:00"
+    }
+  ],
+  "num_records": 2
+}

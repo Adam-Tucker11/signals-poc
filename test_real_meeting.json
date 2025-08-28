@@ -1,0 +1,7 @@
+{
+  "meeting_id": "test-real-session-456",
+  "meeting_title": "Product Planning Meeting",
+  "transcript": "<br><p>00:00:15 Adam Tucker: Hey team, let's discuss the new feature roadmap for Q4.<br><p>00:00:30 Sarah Chen: I think we should prioritize the user feedback we got from last month's customer interviews.<br><p>00:00:45 Mike Johnson: Agreed. The data migration from the old system is taking longer than expected.<br><p>00:01:00 Adam Tucker: Right, and we need to plan the training sessions for the new features.<br><p>00:01:15 Sarah Chen: The timeline is tight, but I think we can make it work if we focus on the most critical features first.",
+  "started_at": "2025-08-28T14:00:00Z",
+  "meeting_type": "product_planning"
+}

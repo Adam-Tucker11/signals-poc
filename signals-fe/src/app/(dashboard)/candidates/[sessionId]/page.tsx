@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, use } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/browser';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -9,6 +9,21 @@ import { Label } from '@/components/ui/label';
 import { Checkbox } from '@/components/ui/checkbox';
 import { toast } from 'sonner';
 import { Badge } from '@/components/ui/badge';
+import { 
+  Clock, 
+  CheckCircle, 
+  XCircle, 
+  Save, 
+  Loader2,
+  AlertCircle,
+  Keyboard,
+  Target,
+  Link as LinkIcon,
+  FolderOpen,
+  Sparkles,
+  ChevronRight,
+  Eye
+} from 'lucide-react';
 
 type Candidate = {
   candidate_id: string;
@@ -20,12 +35,16 @@ type Candidate = {
   status: 'pending' | 'approved' | 'rejected';
 };
 
-export default function CandidatePage({ params }: { params: { sessionId: string } }) {
+export default function CandidatePage({ params }: { params: Promise<{ sessionId: string }> }) {
+  const { sessionId } = use(params);
   const sb = supabaseBrowser();
   const [cands, setCands] = useState<Candidate[]>([]);
   const [cores, setCores] = useState<{id: string, label: string}[]>([]);
   const [mergeThreshold, setMergeThreshold] = useState<number>(0.65);
   const [autoChunkTag, setAutoChunkTag] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isSaving, setIsSaving] = useState(false);
+  const [expandedCard, setExpandedCard] = useState<string | null>(null);
   const [decisions, setDecisions] = useState<Record<string, {
     status: 'pending'|'approved'|'rejected',
     action: 'none'|'alias'|'subtopic',
@@ -33,53 +52,68 @@ export default function CandidatePage({ params }: { params: { sessionId: string 
   }>>({});
 
   async function load() {
-    const [{ data: cd }, { data: tc }, { data: cfg }] = await Promise.all([
-      sb.from('topic_candidates').select('*').eq('session_id', params.sessionId).order('created_at', { ascending:false }),
-      sb.from('topics').select('id,label').order('label'),
-      sb.from('scoring_config').select('*').eq('id', 1).maybeSingle()
-    ]);
-    setCands(cd ?? []);
-    setCores(tc ?? []);
-    if (cfg?.merge_threshold) setMergeThreshold(Number(cfg.merge_threshold));
-    const init: typeof decisions = {};
-    (cd ?? []).forEach(x => init[x.candidate_id] = { status: x.status, action: 'none', targetCoreId: x.merged_into_topic ?? undefined });
-    setDecisions(init);
+    try {
+      setIsLoading(true);
+      const [{ data: cd }, { data: tc }, { data: cfg }] = await Promise.all([
+        sb.from('topic_candidates').select('*').eq('session_id', sessionId).order('created_at', { ascending:false }),
+        sb.from('topics').select('id,label').order('label'),
+        sb.from('scoring_config').select('*').eq('id', 1).maybeSingle()
+      ]);
+      setCands(cd ?? []);
+      setCores(tc ?? []);
+      if (cfg?.merge_threshold) setMergeThreshold(Number(cfg.merge_threshold));
+      const init: typeof decisions = {};
+      (cd ?? []).forEach(x => init[x.candidate_id] = { status: x.status, action: 'none', targetCoreId: x.merged_into_topic ?? undefined });
+      setDecisions(init);
+    } catch (error) {
+      toast.error('Failed to load candidates');
+      console.error(error);
+    } finally {
+      setIsLoading(false);
+    }
   }
 
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); }, [sessionId]);
 
   function setDecision(id: string, patch: Partial<typeof decisions[string]>) {
     setDecisions(prev => ({ ...prev, [id]: { ...prev[id], ...patch }}));
   }
 
   async function save() {
-    const payload = Object.entries(decisions).map(([id, v]) => ({ id, ...v, sessionId: params.sessionId }));
-    const res = await fetch('/api/approvals/commit', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ decisions: payload }),
-    });
-    if (!res.ok) {
-      toast.error('Commit failed');
-      return;
-    }
-    toast.success('Decisions saved successfully');
-    
-    // Auto-run chunk+tag if enabled
-    if (autoChunkTag) {
-      try {
-        await fetch('/api/chunk-tag', { 
-          method: 'POST', 
-          headers: { 'content-type': 'application/json' },
-          body: JSON.stringify({ sessionId: params.sessionId })
-        });
-        toast.success('Chunk+tag pipeline triggered automatically');
-      } catch (error) {
-        toast.error('Failed to trigger chunk+tag pipeline');
+    try {
+      setIsSaving(true);
+      const payload = Object.entries(decisions).map(([id, v]) => ({ id, ...v, sessionId }));
+      const res = await fetch('/api/approvals/commit', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ decisions: payload }),
+      });
+      if (!res.ok) {
+        throw new Error('Commit failed');
       }
+      toast.success('Decisions saved successfully');
+      
+      // Auto-run chunk+tag if enabled
+      if (autoChunkTag) {
+        try {
+          await fetch('/api/chunk-tag', { 
+            method: 'POST', 
+            headers: { 'content-type': 'application/json' },
+            body: JSON.stringify({ sessionId: sessionId })
+          });
+          toast.success('Chunk+tag pipeline triggered automatically');
+        } catch (error) {
+          toast.error('Failed to trigger chunk+tag pipeline');
+        }
+      }
+      
+      await load();
+    } catch (error) {
+      toast.error('Failed to save decisions');
+      console.error(error);
+    } finally {
+      setIsSaving(false);
     }
-    
-    await load();
   }
 
   const pendingCount = useMemo(() => cands.filter(c => decisions[c.candidate_id]?.status === 'pending').length, [cands, decisions]);
@@ -220,7 +254,7 @@ export default function CandidatePage({ params }: { params: { sessionId: string 
               <div className="flex items-start justify-between mb-4">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <h3 className="text-xl font-bold text-gray-800">{c.label}</ertheless>
+                    <h3 className="text-xl font-bold text-gray-800">{c.label}</h3>
                     <Badge variant={isPending ? "default" : isApproved ? "outline" : "destructive"} 
                            className={`text-xs ${
                              isPending ? 'bg-blue-500' : 
@@ -379,7 +413,7 @@ export default function CandidatePage({ params }: { params: { sessionId: string 
           <div className="flex items-center gap-4">
             <Button 
               onClick={save} 
-              disabled={!hasChanges || pendingCount > 0}
+              disabled={!hasChanges || pendingCount > 0 || isSaving}
               className="bg-gradient-to-r from-blue-500 to-indigo-500 text-white hover:from-blue-600 hover:to-indigo-600 transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
               size="lg"
             >

@@ -1,0 +1,32 @@
+[
+  {
+    "chunk_id": "00000001",
+    "speaker": "Adam Tucker",
+    "start_time": "00:00:15",
+    "text": "Hey team, let's discuss the new feature roadmap for Q4."
+  },
+  {
+    "chunk_id": "00000002",
+    "speaker": "Sarah Chen",
+    "start_time": "00:00:30",
+    "text": "I think we should prioritize the user feedback we got from last month's customer interviews."
+  },
+  {
+    "chunk_id": "00000003",
+    "speaker": "Mike Johnson",
+    "start_time": "00:00:45",
+    "text": "Agreed. The data migration from the old system is taking longer than expected."
+  },
+  {
+    "chunk_id": "00000004",
+    "speaker": "Adam Tucker",
+    "start_time": "00:01:00",
+    "text": "Right, and we need to plan the training sessions for the new features."
+  },
+  {
+    "chunk_id": "00000005",
+    "speaker": "Sarah Chen",
+    "start_time": "00:01:15",
+    "text": "The timeline is tight, but I think we can make it work if we focus on the most critical features first."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "chunk_id": "00000001",
+    "speaker": "Rich Theil",
+    "start_time": "00:00:48",
+    "text": "How's that storm treating you? You look like you're in the dark a little."
+  },
+  {
+    "chunk_id": "00000002",
+    "speaker": "Adam Tucker",
+    "start_time": "00:01:15",
+    "text": "Yeah, it's pretty intense here. The power went out for a bit."
+  },
+  {
+    "chunk_id": "00000003",
+    "speaker": "Rich Theil",
+    "start_time": "00:01:30",
+    "text": "That's rough. Let's talk about the product roadmap."
+  },
+  {
+    "chunk_id": "00000004",
+    "speaker": "Adam Tucker",
+    "start_time": "00:02:00",
+    "text": "Sure, I think we need to focus on user feedback first."
+  }
+]

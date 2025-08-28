@@ -78,15 +78,33 @@ def naive_chunks(meeting: Dict[str,Any]) -> List[Chunk]:
     """
     out: List[Chunk] = []
     tr = meeting.get("transcript", "")
+    
     if isinstance(tr, str):
         text = tr.strip()
-        if text:
-            out.append(Chunk(
-                chunk_id=f"{1:08x}"[:8],
-                speaker="unknown",
-                start_time=meeting.get("start_time"),
-                text=text
-            ))
+        if not text:
+            return out
+            
+        # Try to parse HTML-formatted transcripts with timestamps and speakers
+        if "<br><p>" in text or "<p>" in text:
+            chunks = _parse_html_transcript(text)
+            for i, chunk_data in enumerate(chunks, start=1):
+                out.append(Chunk(
+                    chunk_id=f"{i:08x}"[:8],
+                    speaker=chunk_data.get("speaker", "unknown"),
+                    start_time=chunk_data.get("start_time"),
+                    text=chunk_data.get("text", "").strip()
+                ))
+        else:
+            # For plain text, create chunks by splitting on sentences
+            chunks = _split_text_into_chunks(text)
+            for i, chunk_text in enumerate(chunks, start=1):
+                if chunk_text.strip():
+                    out.append(Chunk(
+                        chunk_id=f"{i:08x}"[:8],
+                        speaker="unknown",
+                        start_time=meeting.get("start_time"),
+                        text=chunk_text.strip()
+                    ))
         return out
 
     if isinstance(tr, list):
@@ -110,6 +128,108 @@ def naive_chunks(meeting: Dict[str,Any]) -> List[Chunk]:
 
     # Fallback: nothing usable
     return out
+
+
+def _parse_html_transcript(text: str) -> List[Dict[str, str]]:
+    """Parse HTML-formatted transcript into structured chunks."""
+    import re
+    
+    chunks = []
+    
+    # Split on paragraph tags
+    paragraphs = re.split(r'<br><p>|<p>|</p>', text)
+    
+    for para in paragraphs:
+        para = para.strip()
+        if not para:
+            continue
+            
+        # Try to extract timestamp and speaker
+        # Pattern: 00:00:48 Rich Theil: How's that storm treating you?
+        timestamp_speaker_match = re.match(r'(\d{2}:\d{2}:\d{2})\s+([^:]+):\s*(.+)', para)
+        
+        if timestamp_speaker_match:
+            timestamp, speaker, content = timestamp_speaker_match.groups()
+            chunks.append({
+                "start_time": timestamp,
+                "speaker": speaker.strip(),
+                "text": content.strip()
+            })
+        else:
+            # If no timestamp/speaker pattern, just use the text
+            chunks.append({
+                "start_time": None,
+                "speaker": "unknown",
+                "text": para
+            })
+    
+    # Return each speaker turn as a separate chunk (no grouping)
+    return chunks
+
+
+def _group_chunks_by_speaker(chunks: List[Dict[str, str]], max_chunk_size: int = 1000) -> List[Dict[str, str]]:
+    """Group consecutive chunks by speaker to create larger, more meaningful chunks."""
+    if not chunks:
+        return []
+    
+    grouped = []
+    current_group = {
+        "start_time": chunks[0].get("start_time"),
+        "speaker": chunks[0].get("speaker", "unknown"),
+        "text": chunks[0].get("text", "")
+    }
+    
+    for chunk in chunks[1:]:
+        # If same speaker and chunk isn't too large, merge
+        if (chunk.get("speaker") == current_group["speaker"] and 
+            len(current_group["text"]) + len(chunk.get("text", "")) < max_chunk_size):
+            current_group["text"] += " " + chunk.get("text", "")
+        else:
+            # Start new group
+            if current_group["text"].strip():
+                grouped.append(current_group)
+            current_group = {
+                "start_time": chunk.get("start_time"),
+                "speaker": chunk.get("speaker", "unknown"),
+                "text": chunk.get("text", "")
+            }
+    
+    # Add the last group
+    if current_group["text"].strip():
+        grouped.append(current_group)
+    
+    return grouped
+
+
+def _split_text_into_chunks(text: str, max_chunk_size: int = 1000) -> List[str]:
+    """Split plain text into chunks by sentences."""
+    import re
+    
+    # Split on sentence endings
+    sentences = re.split(r'[.!?]+', text)
+    chunks = []
+    current_chunk = ""
+    
+    for sentence in sentences:
+        sentence = sentence.strip()
+        if not sentence:
+            continue
+            
+        # If adding this sentence would make chunk too large, start new chunk
+        if len(current_chunk) + len(sentence) > max_chunk_size and current_chunk:
+            chunks.append(current_chunk.strip())
+            current_chunk = sentence
+        else:
+            if current_chunk:
+                current_chunk += ". " + sentence
+            else:
+                current_chunk = sentence
+    
+    # Add the last chunk
+    if current_chunk.strip():
+        chunks.append(current_chunk.strip())
+    
+    return chunks
 
 
 # ---------- LLM steps ----------

@@ -1,0 +1,7 @@
+{
+  "meeting_id": "test-session-123",
+  "meeting_title": "Test Meeting",
+  "transcript": "<br><p>00:00:48 Rich Theil: How's that storm treating you? You look like you're in the dark a little.<br><p>00:01:15 Adam Tucker: Yeah, it's pretty intense here. The power went out for a bit.<br><p>00:01:30 Rich Theil: That's rough. Let's talk about the product roadmap.<br><p>00:02:00 Adam Tucker: Sure, I think we need to focus on user feedback first.",
+  "started_at": "2025-08-28T10:00:00Z",
+  "meeting_type": "test"
+}

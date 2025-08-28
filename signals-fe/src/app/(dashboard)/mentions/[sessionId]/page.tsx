@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, use } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/browser';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -21,7 +21,8 @@ type Mention = {
   timestamp?: string;
 };
 
-export default function MentionsPage({ params }: { params: { sessionId: string } }) {
+export default function MentionsPage({ params }: { params: Promise<{ sessionId: string }> }) {
+  const { sessionId } = use(params);
   const sb = supabaseBrowser();
   const [mentions, setMentions] = useState<Mention[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
@@ -34,7 +35,7 @@ export default function MentionsPage({ params }: { params: { sessionId: string }
       sb.from('mentions').select(`
         *,
         topics!inner(label)
-      `).eq('session_id', params.sessionId).order('relevance', { ascending: false }),
+      `).eq('session_id', sessionId).order('relevance', { ascending: false }),
       sb.from('topics').select('id,label').order('label')
     ]);
     
@@ -65,7 +66,7 @@ export default function MentionsPage({ params }: { params: { sessionId: string }
     setTopics(t ?? []);
   }
   
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); }, [sessionId]);
 
   const filteredMentions = mentions.filter(m => {
     const matchesSearch = !searchTerm || 

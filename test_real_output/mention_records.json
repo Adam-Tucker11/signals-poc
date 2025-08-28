@@ -1,0 +1,14 @@
+{
+  "mention_records": [
+    {
+      "meeting_id": "test-real-session-456",
+      "chunk_hash": "1777154b21b23e3cc9e7e7b74b520bce03048e9150b9bf48d0b88d963fdbe2c3",
+      "topic_id": "feedback",
+      "speaker_role": "Sarah Chen",
+      "meeting_type": "product_planning",
+      "relevance": 0.5,
+      "timestamp": "2025-08-28T17:33:47.095443+00:00"
+    }
+  ],
+  "num_records": 1
+}
